@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import Form from "./component/Form";
 import Navbar from "./component/Navbar";

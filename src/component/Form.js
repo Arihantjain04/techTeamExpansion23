@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 
 
 export default function Form(props) {
-
   let docWidth = window.innerWidth;
 
   let imageStyle =
@@ -78,8 +77,8 @@ export default function Form(props) {
                   type="text"
                   required
                   className="form-control"
-                  id="Name"
-                  name="Name"
+                  id="name"
+                  name="name"
                   placeholder="Name"
                 />
                 <label htmlFor="Name">Name</label>
@@ -91,7 +90,6 @@ export default function Form(props) {
                 id="Branch"
                 required
               >
-                <option value="none">Branch</option>
                 <option value="CSE">Computer Science and Engineering</option>
                 <option value="Electrical">Electrical Engineering</option>
                 <option value="Electronics">
@@ -104,7 +102,7 @@ export default function Form(props) {
                 <option value="Mining">Mining Engineering</option>
                 <option value="Ceramic">Ceramic Engineering</option>
                 <option value="Pharma">Pharma</option>
-                <option value="Other">Other branch</option>
+                <option value="Other">Other lower branch</option>
               </select>
 
               <div className="form-floating my-2">
@@ -112,8 +110,8 @@ export default function Form(props) {
                   type="email"
                   required
                   className="form-control"
-                  id="Email"
-                  name="Email"
+                  id="email"
+                  name="email"
                   placeholder="name@example.com"
                 />
                 <label htmlFor="Email">Email address</label>
@@ -124,8 +122,8 @@ export default function Form(props) {
                   type="number"
                   required
                   className="form-control"
-                  id="PhoneNumber"
-                  name="PhoneNumber"
+                  id="phoneNumber"
+                  name="phoneNumber"
                   placeholder="Phone number"
                 />
                 <label htmlFor="PhoneNumber">Contact number</label>
@@ -137,6 +135,7 @@ export default function Form(props) {
               >
                 {props.buttonTask}
               </button>
+              {/* <p className="mt-5 mb-3 text-body-secondary">© 2017–2023</p> */}
             </form>
           </main>
           <script
